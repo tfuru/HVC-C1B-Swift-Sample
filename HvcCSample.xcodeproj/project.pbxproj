@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		450FE9231B98908400CFABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9221B98908400CFABDC /* AppDelegate.swift */; };
+		450FE9251B98908400CFABDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9241B98908400CFABDC /* ViewController.swift */; };
+		450FE9281B98908400CFABDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450FE9261B98908400CFABDC /* Main.storyboard */; };
+		450FE92A1B98908400CFABDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450FE9291B98908400CFABDC /* Images.xcassets */; };
+		450FE92D1B98908400CFABDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450FE92B1B98908400CFABDC /* LaunchScreen.xib */; };
+		450FE9391B98908400CFABDC /* HvcCSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9381B98908400CFABDC /* HvcCSampleTests.swift */; };
+		450FE9431B98909100CFABDC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450FE9421B98909100CFABDC /* CoreBluetooth.framework */; };
+		450FE9531B9890C600CFABDC /* BleDeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9471B9890C600CFABDC /* BleDeviceService.m */; };
+		450FE9541B9890C600CFABDC /* HVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9491B9890C600CFABDC /* HVC.m */; };
+		450FE9551B9890C600CFABDC /* HVC_BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE94B1B9890C600CFABDC /* HVC_BLE.m */; };
+		450FE9561B9890C600CFABDC /* HVC_PRM.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE94D1B9890C600CFABDC /* HVC_PRM.m */; };
+		450FE9571B9890C600CFABDC /* HVC_RES.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE94F1B9890C600CFABDC /* HVC_RES.m */; };
+		450FE9581B9890C600CFABDC /* HVC_VER.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FE9511B9890C600CFABDC /* HVC_VER.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		450FE9331B98908400CFABDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 450FE9151B98908400CFABDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 450FE91C1B98908400CFABDC;
+			remoteInfo = HvcCSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		450FE91D1B98908400CFABDC /* HvcCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HvcCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		450FE9211B98908400CFABDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450FE9221B98908400CFABDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		450FE9241B98908400CFABDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		450FE9271B98908400CFABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		450FE9291B98908400CFABDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		450FE92C1B98908400CFABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		450FE9321B98908400CFABDC /* HvcCSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HvcCSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		450FE9371B98908400CFABDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450FE9381B98908400CFABDC /* HvcCSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvcCSampleTests.swift; sourceTree = "<group>"; };
+		450FE9421B98909100CFABDC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		450FE9461B9890C600CFABDC /* BleDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleDeviceService.h; sourceTree = "<group>"; };
+		450FE9471B9890C600CFABDC /* BleDeviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleDeviceService.m; sourceTree = "<group>"; };
+		450FE9481B9890C600CFABDC /* HVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVC.h; sourceTree = "<group>"; };
+		450FE9491B9890C600CFABDC /* HVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVC.m; sourceTree = "<group>"; };
+		450FE94A1B9890C600CFABDC /* HVC_BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVC_BLE.h; sourceTree = "<group>"; };
+		450FE94B1B9890C600CFABDC /* HVC_BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVC_BLE.m; sourceTree = "<group>"; };
+		450FE94C1B9890C600CFABDC /* HVC_PRM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVC_PRM.h; sourceTree = "<group>"; };
+		450FE94D1B9890C600CFABDC /* HVC_PRM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVC_PRM.m; sourceTree = "<group>"; };
+		450FE94E1B9890C600CFABDC /* HVC_RES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVC_RES.h; sourceTree = "<group>"; };
+		450FE94F1B9890C600CFABDC /* HVC_RES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVC_RES.m; sourceTree = "<group>"; };
+		450FE9501B9890C600CFABDC /* HVC_VER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVC_VER.h; sourceTree = "<group>"; };
+		450FE9511B9890C600CFABDC /* HVC_VER.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVC_VER.m; sourceTree = "<group>"; };
+		450FE9521B9890C600CFABDC /* HVCC_Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVCC_Define.h; sourceTree = "<group>"; };
+		450FE9591B98955500CFABDC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		450FE91A1B98908400CFABDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450FE9431B98909100CFABDC /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450FE92F1B98908400CFABDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450FE9141B98908400CFABDC = {
+			isa = PBXGroup;
+			children = (
+				450FE9421B98909100CFABDC /* CoreBluetooth.framework */,
+				450FE91F1B98908400CFABDC /* HvcCSample */,
+				450FE9351B98908400CFABDC /* HvcCSampleTests */,
+				450FE91E1B98908400CFABDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		450FE91E1B98908400CFABDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				450FE91D1B98908400CFABDC /* HvcCSample.app */,
+				450FE9321B98908400CFABDC /* HvcCSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		450FE91F1B98908400CFABDC /* HvcCSample */ = {
+			isa = PBXGroup;
+			children = (
+				450FE9451B9890C600CFABDC /* SDK */,
+				450FE9221B98908400CFABDC /* AppDelegate.swift */,
+				450FE9241B98908400CFABDC /* ViewController.swift */,
+				450FE9261B98908400CFABDC /* Main.storyboard */,
+				450FE9291B98908400CFABDC /* Images.xcassets */,
+				450FE92B1B98908400CFABDC /* LaunchScreen.xib */,
+				450FE9201B98908400CFABDC /* Supporting Files */,
+				450FE9591B98955500CFABDC /* Bridging-Header.h */,
+			);
+			path = HvcCSample;
+			sourceTree = "<group>";
+		};
+		450FE9201B98908400CFABDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				450FE9211B98908400CFABDC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		450FE9351B98908400CFABDC /* HvcCSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				450FE9381B98908400CFABDC /* HvcCSampleTests.swift */,
+				450FE9361B98908400CFABDC /* Supporting Files */,
+			);
+			path = HvcCSampleTests;
+			sourceTree = "<group>";
+		};
+		450FE9361B98908400CFABDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				450FE9371B98908400CFABDC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		450FE9451B9890C600CFABDC /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				450FE9461B9890C600CFABDC /* BleDeviceService.h */,
+				450FE9471B9890C600CFABDC /* BleDeviceService.m */,
+				450FE9481B9890C600CFABDC /* HVC.h */,
+				450FE9491B9890C600CFABDC /* HVC.m */,
+				450FE94A1B9890C600CFABDC /* HVC_BLE.h */,
+				450FE94B1B9890C600CFABDC /* HVC_BLE.m */,
+				450FE94C1B9890C600CFABDC /* HVC_PRM.h */,
+				450FE94D1B9890C600CFABDC /* HVC_PRM.m */,
+				450FE94E1B9890C600CFABDC /* HVC_RES.h */,
+				450FE94F1B9890C600CFABDC /* HVC_RES.m */,
+				450FE9501B9890C600CFABDC /* HVC_VER.h */,
+				450FE9511B9890C600CFABDC /* HVC_VER.m */,
+				450FE9521B9890C600CFABDC /* HVCC_Define.h */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		450FE91C1B98908400CFABDC /* HvcCSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450FE93C1B98908400CFABDC /* Build configuration list for PBXNativeTarget "HvcCSample" */;
+			buildPhases = (
+				450FE9191B98908400CFABDC /* Sources */,
+				450FE91A1B98908400CFABDC /* Frameworks */,
+				450FE91B1B98908400CFABDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HvcCSample;
+			productName = HvcCSample;
+			productReference = 450FE91D1B98908400CFABDC /* HvcCSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		450FE9311B98908400CFABDC /* HvcCSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450FE93F1B98908400CFABDC /* Build configuration list for PBXNativeTarget "HvcCSampleTests" */;
+			buildPhases = (
+				450FE92E1B98908400CFABDC /* Sources */,
+				450FE92F1B98908400CFABDC /* Frameworks */,
+				450FE9301B98908400CFABDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				450FE9341B98908400CFABDC /* PBXTargetDependency */,
+			);
+			name = HvcCSampleTests;
+			productName = HvcCSampleTests;
+			productReference = 450FE9321B98908400CFABDC /* HvcCSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		450FE9151B98908400CFABDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "古川信行";
+				TargetAttributes = {
+					450FE91C1B98908400CFABDC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					450FE9311B98908400CFABDC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 450FE91C1B98908400CFABDC;
+					};
+				};
+			};
+			buildConfigurationList = 450FE9181B98908400CFABDC /* Build configuration list for PBXProject "HvcCSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 450FE9141B98908400CFABDC;
+			productRefGroup = 450FE91E1B98908400CFABDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				450FE91C1B98908400CFABDC /* HvcCSample */,
+				450FE9311B98908400CFABDC /* HvcCSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		450FE91B1B98908400CFABDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450FE9281B98908400CFABDC /* Main.storyboard in Resources */,
+				450FE92D1B98908400CFABDC /* LaunchScreen.xib in Resources */,
+				450FE92A1B98908400CFABDC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450FE9301B98908400CFABDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		450FE9191B98908400CFABDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450FE9531B9890C600CFABDC /* BleDeviceService.m in Sources */,
+				450FE9581B9890C600CFABDC /* HVC_VER.m in Sources */,
+				450FE9541B9890C600CFABDC /* HVC.m in Sources */,
+				450FE9251B98908400CFABDC /* ViewController.swift in Sources */,
+				450FE9561B9890C600CFABDC /* HVC_PRM.m in Sources */,
+				450FE9551B9890C600CFABDC /* HVC_BLE.m in Sources */,
+				450FE9571B9890C600CFABDC /* HVC_RES.m in Sources */,
+				450FE9231B98908400CFABDC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450FE92E1B98908400CFABDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450FE9391B98908400CFABDC /* HvcCSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		450FE9341B98908400CFABDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 450FE91C1B98908400CFABDC /* HvcCSample */;
+			targetProxy = 450FE9331B98908400CFABDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		450FE9261B98908400CFABDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				450FE9271B98908400CFABDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		450FE92B1B98908400CFABDC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				450FE92C1B98908400CFABDC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		450FE93A1B98908400CFABDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HvcCSample/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		450FE93B1B98908400CFABDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HvcCSample/Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		450FE93D1B98908400CFABDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = HvcCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		450FE93E1B98908400CFABDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = HvcCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		450FE9401B98908400CFABDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HvcCSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HvcCSample.app/HvcCSample";
+			};
+			name = Debug;
+		};
+		450FE9411B98908400CFABDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HvcCSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HvcCSample.app/HvcCSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		450FE9181B98908400CFABDC /* Build configuration list for PBXProject "HvcCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450FE93A1B98908400CFABDC /* Debug */,
+				450FE93B1B98908400CFABDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		450FE93C1B98908400CFABDC /* Build configuration list for PBXNativeTarget "HvcCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450FE93D1B98908400CFABDC /* Debug */,
+				450FE93E1B98908400CFABDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		450FE93F1B98908400CFABDC /* Build configuration list for PBXNativeTarget "HvcCSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450FE9401B98908400CFABDC /* Debug */,
+				450FE9411B98908400CFABDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 450FE9151B98908400CFABDC /* Project object */;
+}
